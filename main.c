@@ -25,9 +25,11 @@
 int main(int argc, const char * argv[])
 {
   robotPrintAscii();
-  if(argc > 1 && isdigit(*argv[1])) {  
+  if(argc > 1 && isdigit(*argv[1])) {
+    for(int i = 0; i < 2; i++) {
     	dalekPrintAscii();
   	robotPrintMessage();
+    }
   }
   
   return 0;
